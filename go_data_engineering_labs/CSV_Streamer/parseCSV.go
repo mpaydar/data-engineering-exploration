@@ -19,7 +19,7 @@ func writeToCSV(customers []customers) error {
     defer writer.Flush() // Push any leftover data in the buffer to the file
 
     // 3. Write the Header Row
-    headers := []string{"First Name", "Last Name", "Purchased", "Items"}
+    headers := []string{"First Name", "Last Name", "Purchased", "Items","Number of Items"}
     writer.Write(headers)
 
     // 4. Loop through your list and write rows

@@ -1,11 +1,11 @@
-First Name,Last Name,Purchased,Items
-Jasmin,Cole,true,"shrimp,parsley,parsley,bread",4
-Jena,Fuller,false,"parsley,chicken,egg,parsley,chicken,parsley,bread,bread,shrimp,shrimp",10
-Leo,Meyer,true,"chicken,chicken,bread",3
-Darrell,McKenzie,false,"shrimp,orange,bread,yogurt,chicken,orange",6
-Isabell,Lyons,false,"bread,orange,orange,milk",4
-Roxanne,Leonard,true,"shrimp,yogurt,yogurt,parsley,shrimp,bread,milk,parsley,shrimp,yogurt",10
-Parker,Lopez,false,,0
-Laurel,Wilson,false,"parsley,shrimp,egg,egg,egg,egg,parsley,egg,steak,chicken",10
-Amanda,Collins,false,"steak,yogurt,milk,yogurt,chicken,steak,parsley,shrimp,egg,egg",10
-Denis,Marsh,false,"chicken,parsley",2
+First Name,Last Name,Purchased,Items,Number of Items
+Irma,Yang,true,"parsley,orange,steak,steak,shrimp,bread,milk,steak,chicken",9
+Brenden,Gibbs,true,"bread,milk,chicken,yogurt,orange,parsley,orange,orange,egg,orange",10
+Catalina,Walker,true,"egg,chicken,egg,yogurt,orange,chicken,yogurt,milk,egg,bread",10
+Caleigh,Walters,true,"bread,egg,orange,egg,milk,parsley,orange,egg,parsley,steak",10
+Ana,Gregory,true,"shrimp,parsley,orange,bread,chicken,yogurt,egg,yogurt,egg,egg",10
+Anya,Sutton,false,"milk,milk,orange,egg,steak,egg,steak,steak,shrimp,steak",10
+Ahmed,Zamora,true,"yogurt,orange,milk,parsley,milk",5
+Kali,Hunt,false,milk,1
+Barrett,Bernhard,false,"chicken,milk",2
+Larry,Bailey,true,"chicken,steak,bread,shrimp",4
