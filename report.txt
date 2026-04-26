@@ -1,0 +1,3 @@
+Summary of logs
+Number of error counter 2
+Number of passed counter 79
