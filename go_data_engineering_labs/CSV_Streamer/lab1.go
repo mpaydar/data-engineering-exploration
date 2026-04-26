@@ -12,10 +12,9 @@ type customers struct {
 	items_bought []string
 	// item_category string
 }
-func lab1()  [] customers {
-	numberOfCustomers := 10
-	customer_transactions := make([]customers, 0, numberOfCustomers)
-	for i:=0;i<numberOfCustomers;i++ {
+func lab1(numCustomers int)  [] customers {
+	customer_transactions := make([]customers, 0, numCustomers)
+	for i:=0;i<numCustomers;i++ {
 		newCustomer:=customers{}
 		number_of_items := generate_random_number()
 		newCustomer.first_name=gofakeit.FirstName()
