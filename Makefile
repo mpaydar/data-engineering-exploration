@@ -1,9 +1,9 @@
 
 setup:
 	@echo "Step 1: Generating the logs "
-	python generate.py 
-process: ${setup}
+	python python_exploration/generate.py
+process: setup
 	@echo "Step 2: Filtering logs"
-	python filter.py
+	python python_exploration/filter.py
 
 run: setup process
