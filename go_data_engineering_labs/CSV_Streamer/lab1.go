@@ -4,6 +4,10 @@ import (
 	"github.com/brianvoe/gofakeit/v7";
 	// "regexp"
 	"math/rand/v2"
+	"io"
+	"encoding/csv"
+	"strconv"
+	"strings"
 )
 type customers struct {
 	first_name string
@@ -12,8 +16,8 @@ type customers struct {
 	items_bought []string
 	// item_category string
 }
-func lab1(numCustomers int)  [] customers {
-	customer_transactions := make([]customers, 0, numCustomers)
+func lab1(numCustomers int,pw *io.PipeWriter){
+	csvWriter := csv.NewWriter(pw)
 	for i:=0;i<numCustomers;i++ {
 		newCustomer:=customers{}
 		number_of_items := generate_random_number()
@@ -22,11 +26,11 @@ func lab1(numCustomers int)  [] customers {
 		newCustomer.purchased=gofakeit.Bool()
 		customer_cart := pick_item(number_of_items)
 		newCustomer.items_bought=customer_cart
-		customer_transactions = append(customer_transactions, newCustomer)	
+		row := []string{newCustomer.first_name, newCustomer.last_name,strconv.FormatBool(newCustomer.purchased),strings.Join(newCustomer.items_bought,","),strconv.Itoa(number_of_items)}
+		csvWriter.Write(row)
 		}
-	
-
-	return customer_transactions
+	csvWriter.Flush() // Ensure the last bits of text leave the buffer
+	pw.Close()        // Tell the other end "No more data is coming!"
 	}
 
 
