@@ -19,6 +19,7 @@ func main() {
 	containerPtr := flag.String("container", "lab-data", "target Azure Blob container")
 	blobPtr := flag.String("blob", "generated_customers.csv", "target blob name")
 	flag.Parse()
+	
 
 	connStr := os.Getenv("AZURE_STORAGE_CONNECTION_STRING")
 	if connStr == "" {
