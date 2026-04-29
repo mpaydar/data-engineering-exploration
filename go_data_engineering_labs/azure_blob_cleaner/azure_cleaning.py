@@ -108,7 +108,7 @@ def cleanup_azure_blobs():
             # .find() returned -1, so we skip this file (like generated_customers.csv)
             print(f"Skipping: {name} (Not a Project 88 file)")
 
-# print(f"Path to dataset files: {path}")
-parse_file()
-upload_files_azure()
-cleanup_azure_blobs()
+if __name__ == "__main__":
+    parse_file()
+    upload_files_azure()
+    cleanup_azure_blobs()
