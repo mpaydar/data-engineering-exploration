@@ -1,0 +1,4 @@
+
+**/.env
+**/__pycache__/
+azure_blob_cleaner/finance_batch_*.csv
